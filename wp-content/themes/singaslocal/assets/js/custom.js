@@ -98,12 +98,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var deltaY = event.touches[0].clientY - touchStartY
     event.deltaY = deltaY
     handleWheel(event)
+    console.log(deltaY)
+    console.log(event.touches[0].clientY)
+    console.log(touchStartY)
   }
 
   container.addEventListener('wheel', handleWheel)
   if ('ontouchstart' in window) {
-    container.addEventListener('touchstart', touchStartHandler)
-    container.addEventListener('touchmove', touchMoveHandler)
+    container.addEventListener('touchmove', touchStartHandler)
+    container.addEventListener('touchstart', touchMoveHandler)
   }
 })
 

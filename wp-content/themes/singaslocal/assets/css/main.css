@@ -745,6 +745,7 @@ li.nav-item .nuxt-link-active-custom {
   overflow: hidden;
   padding: 2vmin 2vmin 4vmin;
   position: relative;
+  justify-content: center;
 }
 .mouse {
   border: 0.2vmin solid #fff;
@@ -984,7 +985,7 @@ body.scrollable .container {
 .scetch-blog {
   margin-top: -20vmin;
 }
-form.contact-form {
+div.contact-form {
   max-width: 1300px;
   overflow: hidden;
   width: 100%;
@@ -1008,7 +1009,7 @@ form.contact-form {
 .registration-inner .col-inner {
   align-items: center;
   display: flex;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   justify-content: flex-end;
   margin-bottom: 2vmin;
   position: relative;
@@ -1035,8 +1036,8 @@ form.contact-form {
   z-index: 9;
 }
 .registration-inner textarea.col-input {
-  height: 100%;
-  padding: 1vmin;
+  height: 100px;
+  /* padding: 1vmin; */
   resize: none;
 }
 .registration-inner .col-inner.error .col-input {
