@@ -3330,6 +3330,10 @@ ul li[data-v-09e3f3dd]:nth-child(12) {
   transform: translate3d(0, 300%, 0);
   transition: 0.3s;
   white-space: nowrap;
+
+  input {
+    color: inherit;
+  }
 }
 .flat-btn[data-v-0fe8a0d4]:hover {
   background-color: #4e61e4;

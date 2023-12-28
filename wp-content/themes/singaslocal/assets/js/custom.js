@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
       fifthOfScreen = scrollAmount / 3
 
       if (event.deltaY > 0) {
-        currentPosition -= scrollAmount
+        currentPosition += scrollAmount
         currentPositionScrollIndicator =
           currentPositionScrollIndicator + fifthOfScreen
       } else {
-        currentPosition += scrollAmount
+        currentPosition -= scrollAmount
         currentPositionScrollIndicator =
           currentPositionScrollIndicator - fifthOfScreen
       }
@@ -64,11 +64,11 @@ document.addEventListener('DOMContentLoaded', function () {
       fifthOfScreen = scrollAmount / 8
 
       if (event.deltaY > 0) {
-        currentPosition -= scrollAmount
+        currentPosition += scrollAmount
         currentPositionScrollIndicator =
           currentPositionScrollIndicator + scrollAmount + fifthOfScreen
       } else {
-        currentPosition += scrollAmount
+        currentPosition -= scrollAmount
         currentPositionScrollIndicator =
           currentPositionScrollIndicator - fifthOfScreen - scrollAmount
       }
@@ -98,6 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var deltaY = event.touches[0].clientY - touchStartY
     event.deltaY = deltaY
     handleWheel(event)
+    console.log(deltaY)
+    console.log(event.touches[0].clientY)
+    console.log(touchStartY)
   }
 
   container.addEventListener('wheel', handleWheel)
